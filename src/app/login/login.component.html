@@ -1,1 +1,34 @@
-<p>login works!</p>
+<link rel="stylesheet" href="login.component.css">
+<div class="container">
+  <div class="row">
+    <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+      <div class="card card-signin my-5">
+        <div class="card-body">
+          <h5 class="card-title text-center">Sign In</h5>
+
+        <div ><!-- submitted =false par default ي-->
+          <form  (ngSubmit)="onLogin(loginForm.value)" #loginForm="ngForm">
+            <div class="form-label-group">
+              <input type="text"  class="form-control" placeholder="Your name"
+                     ngModel name="username"
+                     >
+              <br>
+
+            </div>
+
+            <div class="form-label-group">
+              <input type="password" id="inputPassword" class="form-control" name="password" placeholder="Password"
+                     ngModel  >
+              <label for="inputPassword">Password</label>
+            </div>
+
+
+            <button type="submit" class="btn btn-success" >Sign in</button>
+            <hr class="my-4">
+
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
