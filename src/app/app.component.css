@@ -1,0 +1,10 @@
+.clickable{
+  cursor: pointer;
+}
+.ml-auto .dropdown-menu {
+  left: auto !important;
+  right: 0px;
+}
+.heighted{
+  height: 400px;
+}
